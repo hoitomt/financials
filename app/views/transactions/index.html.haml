@@ -1,0 +1,16 @@
+%h1 Transactions
+.panel.panel-default
+  .panel-heading
+    Account Transactions
+    %table.table
+      %tr
+        %th Date
+        %th Description
+        %th Amount
+        %th Tags
+      - @transactions.each do |trans|
+        %tr
+          %td=trans.transaction_date_display
+          %td=trans.description
+          %td=number_to_currency(trans.amount)
+          %td=trans.tags_display

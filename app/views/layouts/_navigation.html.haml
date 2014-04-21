@@ -1,0 +1,14 @@
+.navbar.navbar-inverse.navbar-fixed-top
+  .container
+    .navbar-header
+      %a.navbar-brand{href: root_path} Financials
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li
+          %a{href: transactions_path} Transactions
+        %li
+          %a{href: description_tags_path} Descriptions
+        %li
+          %a{href: reports_path} Reports
+        %li
+          %a{href: new_upload_path} Upload

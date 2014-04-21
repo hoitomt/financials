@@ -1,0 +1,11 @@
+%h1 Description Tags
+.panel.panel-default
+  .panel-heading
+    %table.table
+      %tr
+        %th Description
+        %th Tag
+      - @description_tags.each do |trans|
+        %tr
+          %td=trans.description
+          %td=trans.tag.name

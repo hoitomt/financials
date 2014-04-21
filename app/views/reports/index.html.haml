@@ -1,0 +1,18 @@
+%h1
+  Reports
+%ul.nav.nav-pills
+  %li.dropdown
+    %a#drop4{role: "button", href: '#', data:{toggle: "dropdown"}}
+      Dropdown
+      %b.caret
+    %ul#menu1.dropdown-menu{role: 'menu', "aria-labelledby" => "dropdownMenu1"}
+      %li
+        Test2
+
+.month-summary
+  %h3
+    = @monthly_report.month_name
+  %h4
+    Expenses: (#{number_to_currency(@monthly_report.expense_summary)})
+  %h4
+    Income: #{number_to_currency(@monthly_report.income_summary)}
