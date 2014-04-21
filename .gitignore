@@ -16,3 +16,6 @@
 /tmp
 
 /config/database.yml
+
+# Ignore vendored gems
+/vendor/ruby
